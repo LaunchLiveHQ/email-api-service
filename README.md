@@ -31,6 +31,7 @@ A comprehensive guide and comparison of popular email API services, developer pl
 | **[Lettermint](#21-lettermint)** | 1,000 emails / month | None | No | REST API, SMTP | 100% EU-hosted & GDPR compliant delivery |
 | **[Lettr](#22-lettr)** | Free tier (up to 500 subscribers) | None | No | REST API, Drag & Drop Editor | Unified transactional + marketing for indie SaaS |
 | **[Primitive](#23-primitive)** | Developer sandbox / Agent tier | None | No | REST API, Webhooks, Programmatic Inboxes | Email infrastructure built for AI agents |
+| **[useSend](#24-usesend)** | 3,000 emails / month | None | No | REST API, SMTP, Open-source self-host | Open-source email platform & self-hosting |
 
 ---
 
@@ -301,6 +302,17 @@ A comprehensive guide and comparison of popular email API services, developer pl
 
 ---
 
+### 24. useSend
+* **Overview**: An open-source, developer-friendly email platform built for modern product teams. It provides flexible deployment—either through a managed cloud service or by self-hosting on your own VPS or Docker setup connected to cost-effective infrastructure like AWS SES.
+* **Free Tier Allowance**:
+  * **useSend Cloud**: **3,000 emails / month** free on the managed cloud platform.
+  * **Self-Hosted**: **Unlimited** sends (the core application is open-source and free; you only pay raw provider/infrastructure costs such as AWS SES at $0.10 / 1,000 emails).
+* **Credit Card Required**: No
+* **Key Features**: Visual drag-and-drop email builder, contact management & audience segmentation, suppression lists, real-time deliverability tracking (opens, clicks, bounces), REST API, and SMTP relay.
+* **Website**: [usesend.com](https://usesend.com/)
+
+---
+
 ## 🎯 Selection Guide: Which One Should You Pick?
 
 ```
@@ -322,7 +334,8 @@ A comprehensive guide and comparison of popular email API services, developer pl
 ```
 
 * **Best Developer Experience (DX) for React & Next.js**: [Resend](#1-resend)
-* **Highest Permanent Free Volume**: [Brevo](#6-brevo) (300 emails/day = ~9,000/mo) & [Resend](#1-resend) / [MailerSend](#7-mailersend) (3,000/mo)
+* **Best Open-Source & Self-Hosted Options**: [Plunk](#12-plunk) & [useSend](#24-usesend)
+* **Highest Permanent Free Volume**: [Brevo](#6-brevo) (300 emails/day = ~9,000/mo), [Resend](#1-resend) (3,000/mo), [MailerSend](#7-mailersend) (3,000/mo), and [useSend](#24-usesend) (3,000/mo)
 * **Lowest Cost at Millions of Emails**: [AWS SES](#4-aws-ses) ($0.10 / 1,000 emails)
 * **Strict Transactional Deliverability**: [Postmark](#2-postmark) & [ZeptoMail](#17-zeptomail)
 * **Strict EU Data Residency & GDPR**: [Lettermint](#21-lettermint) & [Scaleway](#16-scaleway)
