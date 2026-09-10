@@ -188,7 +188,7 @@ A comprehensive guide and comparison of popular email API services, developer pl
 
 ### 14. Cloudflare (Cloudflare Email Service - Sending & Routing)
 * **Overview**: Cloudflare's full email solution uniting **Email Routing** (inbound management) and the newly introduced **Email Sending** service (outbound transactional delivery). It allows developers to send emails directly via a Cloudflare Workers binding (`env.EMAIL.send`), a standard REST API (`api.cloudflare.com/client/v4/accounts/{account_id}/email/sending/send`), or traditional authenticated SMTP relay (`smtps://smtp.mx.cloudflare.net:465`).
-* **Free Tier Allowance**:
+* **Free Tier Allowance Need to be on Paid Workers Plan**:
   * **Email Routing (Inbound)**: **100% Free & unlimited** custom email address forwarding to destination inboxes and Workers.
   * **Email Sending (Outbound)**: Includes **3,000 emails / month** on Workers plans (with overage at $0.35 per 1,000 emails).
   * **Free Sends to Verified Destinations**: Sending to verified destination addresses is **always free** and does not count toward monthly quotas or daily limits.
