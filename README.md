@@ -32,6 +32,18 @@ A comprehensive guide and comparison of popular email API services, developer pl
 | **[Lettr](#22-lettr)** | Free tier (up to 500 subscribers) | None | No | REST API, Drag & Drop Editor | Unified transactional + marketing for indie SaaS |
 | **[Primitive](#23-primitive)** | Developer sandbox / Agent tier | None | No | REST API, Webhooks, Programmatic Inboxes | Email infrastructure built for AI agents |
 | **[useSend](#24-usesend)** | 3,000 emails / month | None | No | REST API, SMTP, Open-source self-host | Open-source email platform & self-hosting |
+| **[SendPulse](#25-sendpulse)** | 12,000 emails / month | 400 emails / day | No | REST API, SMTP, Webhooks | Generous permanent transactional free tier |
+| **[EmailOctopus](#26-emailoctopus)** | 10,000 emails / mo (2,500 contacts) | None | No | REST API, Webhooks | High-volume marketing campaigns & automations |
+| **[Mailjet](#27-mailjet)** | 6,000 emails / month | 200 emails / day | No | REST API, SMTP, Webhooks | European deliverability & multi-language SDKs |
+| **[Elastic Email](#28-elastic-email)** | 3,000 emails / month | 100 emails / day | No | REST API, SMTP, Webhooks | Cost-effective transactional & marketing APIs |
+| **[SMTP2GO](#29-smtp2go)** | 1,000 emails / month | 200 emails / day | No | REST API, SMTP | Highly reliable SMTP relay with reporting |
+| **[AhaSend](#30-ahasend)** | 1,000 emails / month | None | No | REST API, SMTP, CLI | Developer-first European transactional email |
+| **[EmailJS](#31-emailjs)** | 200 emails / month | None | No | Client SDKs (JS/React/Vue/Flutter) | Serverless frontend email sending without backend |
+| **[Forward Email](#32-forward-email)** | Unlimited inbound / Paid SMTP | None | No | REST API, DNS Routing, SMTP | Privacy-first open-source domain forwarding |
+| **[Novu](#33-novu)** | 30,000 events / month | None | No | REST API, Multi-channel SDKs | Open-source notification infrastructure |
+| **[Courier](#34-courier)** | 10,000 notifications / month | None | No | REST API, Webhooks, Routing rules | Unified multi-channel routing & template engine |
+| **[Postal](#35-postal)** | Unlimited (Open Source Self-Hosted) | None | No | REST API, SMTP, Webhooks | Full self-hosted delivery platform (SendGrid alt) |
+| **[Listmonk](#36-listmonk)** | Unlimited (Open Source Self-Hosted) | None | No | REST API, Webhooks | High-performance self-hosted newsletter/mail manager |
 
 ---
 
@@ -313,6 +325,145 @@ A comprehensive guide and comparison of popular email API services, developer pl
 
 ---
 
+### 25. SendPulse
+* **Overview**: A multi-channel marketing and messaging platform featuring an exceptionally generous, dedicated transactional SMTP server and REST API for developers.
+* **Free Tier Allowance**:
+  * **12,000 emails / month** free for transactional SMTP/API
+  * **400 emails / day** cap
+  * Full access to SMTP relay and REST API
+* **Credit Card Required**: No
+* **Key Features**: High-volume transactional sending, SPF/DKIM authentication, detailed delivery logs, unsubscribe link management, webhooks for delivery events.
+* **Website**: [sendpulse.com](https://sendpulse.com/features/smtp)
+
+---
+
+### 26. EmailOctopus
+* **Overview**: A developer- and creator-friendly email marketing platform designed to be a lightweight, affordable alternative to Mailchimp with high-capacity free sending.
+* **Free Tier Allowance**:
+  * **10,000 emails / month** free forever
+  * Up to **2,500 subscribers**
+  * Includes landing pages and automated drip sequences
+* **Credit Card Required**: No
+* **Key Features**: REST API, campaign automation workflows, custom domain forms, tag-based segmentation, clean visual builder (includes discreet branding on free tier).
+* **Website**: [emailoctopus.com](https://emailoctopus.com)
+
+---
+
+### 27. Mailjet (Sinch Mailjet)
+* **Overview**: A long-standing European cloud email service provider (part of the Sinch communications group) offering unified marketing campaigns, transactional APIs, and SMTP relay.
+* **Free Tier Allowance**:
+  * **6,000 emails / month** free forever
+  * **200 emails / day** sending cap
+  * Up to 1,000 contacts
+* **Credit Card Required**: No
+* **Key Features**: Robust REST API, SMTP relay, multi-language SDKs (Python, Node, PHP, Go, Java, Ruby), Passport email designer, GDPR-compliant infrastructure.
+* **Website**: [mailjet.com](https://www.mailjet.com)
+
+---
+
+### 28. Elastic Email
+* **Overview**: A fast, cost-efficient email platform offering both an Email API for developers and a visual email marketing suite, powered by its own delivery infrastructure.
+* **Free Tier Allowance**:
+  * **3,000 emails / month** free
+  * **100 emails / day** cap
+  * Up to 1,000 contacts
+* **Credit Card Required**: No
+* **Key Features**: REST API, SMTP relay, sub-accounts, activity logs (3-day retention), template editor, contact management, webhooks.
+* **Website**: [elasticemail.com](https://elasticemail.com)
+
+---
+
+### 29. SMTP2GO
+* **Overview**: An enterprise-grade, highly dependable worldwide SMTP relay and API provider, famous for its real-time analytics, spam-trap monitoring, and ease of setup.
+* **Free Tier Allowance**:
+  * **1,000 emails / month** free forever
+  * **200 emails / day** cap (25/hr for unverified domains, lifted upon verification)
+  * 5 days of reporting and tracking history
+* **Credit Card Required**: No
+* **Key Features**: Real-time spam-trap detection, automated bounce & unsubscribe handling, REST API, global anycast SMTP network, multiple sending sub-users.
+* **Website**: [smtp2go.com](https://www.smtp2go.com)
+
+---
+
+### 30. AhaSend
+* **Overview**: A modern, developer-centric European transactional email API engineered for developers building MVPs, apps, and SaaS who prioritize simplicity and data privacy.
+* **Free Tier Allowance**:
+  * **1,000 emails / month** free forever
+  * Full access to API, SMTP, and CLI tooling
+* **Credit Card Required**: No
+* **Key Features**: Developer CLI, REST API, SMTP relay, sub-accounts for staging/production segregation, EU data hosting, real-time event webhooks.
+* **Website**: [ahasend.com](https://ahasend.com)
+
+---
+
+### 31. EmailJS
+* **Overview**: A unique client-side email service that enables sending emails directly from frontend code (JavaScript, React, Vue, Angular, Flutter, iOS) without creating or running any backend server.
+* **Free Tier Allowance**:
+  * **200 emails / month** free
+  * Up to 2 email templates
+  * Connect up to 2 email services (e.g., Gmail, SendGrid, Mailgun, Fastmail)
+* **Credit Card Required**: No
+* **Key Features**: Zero backend infrastructure required, reCAPTCHA integration to prevent form abuse, template parameter injection, client-side SDKs.
+* **Website**: [emailjs.com](https://www.emailjs.com)
+
+---
+
+### 32. Forward Email
+* **Overview**: A 100% open-source, privacy-first email service built with quantum-resistant encryption. Primarily renowned for unlimited inbound domain forwarding, with optional outbound sending.
+* **Free Tier Allowance**:
+  * **Unlimited** inbound email forwarding and aliases on custom domains
+  * Free REST API for programmatic domain and alias management
+  * *Note*: Outbound SMTP sending requires a paid plan ($3/mo).
+* **Credit Card Required**: No (for free forwarding and aliases)
+* **Key Features**: 100% open-source codebase, no email logging or tracking, disposable aliases, catch-all routing, DMARC/SPF/DKIM automated records.
+* **Website**: [forwardemail.net](https://forwardemail.net)
+
+---
+
+### 33. Novu
+* **Overview**: An open-source notification infrastructure platform that centralizes and coordinates transactional communications across email, SMS, push notifications, and in-app inbox feeds.
+* **Free Tier Allowance**:
+  * **30,000 events / month** free on Novu Cloud
+  * **Unlimited** events when self-hosted (open source)
+* **Credit Card Required**: No
+* **Key Features**: Connects with any email provider (SES, Resend, SendGrid, Postmark, Mailgun), visual workflow orchestrator, digests, user notification center UI components.
+* **Website**: [novu.co](https://novu.co)
+
+---
+
+### 34. Courier
+* **Overview**: A multi-channel notification engine for developers with a powerful visual template designer, multi-provider routing rules, and automatic failovers across email backends.
+* **Free Tier Allowance**:
+  * **10,000 notifications / month** free
+  * Full access to API, design studio, and multi-channel routing
+* **Credit Card Required**: No
+* **Key Features**: Multi-provider failover routing (fallback to secondary email provider if primary fails), drag-and-drop template studio, preferences management, SDKs for major languages.
+* **Website**: [courier.com](https://www.courier.com)
+
+---
+
+### 35. Postal
+* **Overview**: A complete, enterprise-grade open-source mail delivery platform designed as a self-hosted alternative to proprietary services like SendGrid, Mailgun, and Postmark.
+* **Free Tier Allowance**:
+  * **100% Free / Open Source** (MIT License)
+  * **Unlimited** emails (run on your own servers / VPS; you control IP reputation and server costs)
+* **Credit Card Required**: No
+* **Key Features**: Full web UI dashboard, live click/open tracking, IP pool assignment, webhook delivery updates, inbound mail routing, spam/antivirus checking integration.
+* **Website**: [postalserver.io](https://postalserver.io)
+
+---
+
+### 36. Listmonk
+* **Overview**: A blazingly fast, standalone, self-hosted newsletter and mailing list manager packaged as a single Go binary backed by PostgreSQL.
+* **Free Tier Allowance**:
+  * **100% Free / Open Source** (GNU AGPL-v3)
+  * **Unlimited** emails and subscribers (self-hosted; connect your own SMTP relay or AWS SES)
+* **Credit Card Required**: No
+* **Key Features**: Ultra-fast performance (thousands of emails/sec), rich REST API for subscriber/campaign management, custom templating, multi-threading, privacy-first tracking.
+* **Website**: [listmonk.app](https://listmonk.app)
+
+---
+
 ## 🎯 Selection Guide: Which One Should You Pick?
 
 ```
@@ -322,23 +473,35 @@ A comprehensive guide and comparison of popular email API services, developer pl
                                        │
          ┌─────────────────────────────┼──────────────────────────────┐
          ▼                             ▼                              ▼
-  Modern Web / SaaS            High-Volume / Budget             AI / European / QA
+  Modern Web / SaaS            High-Volume / Free               Self-Hosted / AI
  ┌─────────────────────┐      ┌─────────────────────┐      ┌─────────────────────┐
- │ • Resend            │      │ • Brevo             │      │ • Primitive         │
- │   (React Email/TS)  │      │   (300/day free)    │      │   (AI Agents)       │
- │ • Loops             │      │ • AWS SES           │      │ • Lettermint        │
- │   (SaaS lifecycle)  │      │   (Cheapest scale)  │      │   (100% EU / GDPR)  │
- │ • Postmark          │      │ • MailerSend        │      │ • Mailtrap          │
- │   (Mission-critical)│      │   (3,000/mo free)   │      │   (Testing Sandbox) │
+ │ • Resend            │      │ • SendPulse         │      │ • Postal            │
+ │   (React Email/TS)  │      │   (12,000/mo free)  │      │   (Full mail server)│
+ │ • Loops             │      │ • EmailOctopus      │      │ • Listmonk          │
+ │   (SaaS lifecycle)  │      │   (10,000/mo free)  │      │   (Fast Go/Postgres)│
+ │ • Postmark          │      │ • Brevo             │      │ • useSend / Plunk   │
+ │   (Mission-critical)│      │   (300/day = ~9k/mo)│      │   (AWS SES wrapper) │
+ │ • Cloudflare        │      │ • Mailjet           │      │ • Primitive         │
+ │   (Edge Workers/API)│      │   (6,000/mo free)   │      │   (AI agent inboxes)│
  └─────────────────────┘      └─────────────────────┘      └─────────────────────┘
 ```
 
 * **Best Developer Experience (DX) for React & Next.js**: [Resend](#1-resend)
-* **Best Open-Source & Self-Hosted Options**: [Plunk](#12-plunk) & [useSend](#24-usesend)
-* **Highest Permanent Free Volume**: [Brevo](#6-brevo) (300 emails/day = ~9,000/mo), [Resend](#1-resend) (3,000/mo), [MailerSend](#7-mailersend) (3,000/mo), and [useSend](#24-usesend) (3,000/mo)
+* **Highest Permanent Free Volume**:
+  * [SendPulse](#25-sendpulse) (12,000 emails/mo)
+  * [EmailOctopus](#26-emailoctopus) (10,000 emails/mo)
+  * [Brevo](#6-brevo) (300 emails/day = ~9,000/mo)
+  * [Mailjet](#27-mailjet) (6,000 emails/mo)
+  * [Resend](#1-resend), [MailerSend](#7-mailersend), [Elastic Email](#28-elastic-email), [useSend](#24-usesend) (3,000 emails/mo each)
+* **Best Open-Source & Self-Hosted Platforms**:
+  * [Postal](#35-postal) (full SendGrid/Mailgun server replacement)
+  * [Listmonk](#36-listmonk) (high-speed Go newsletter engine)
+  * [useSend](#24-usesend) & [Plunk](#12-plunk) (open-source SaaS & AWS SES wrappers)
+* **Best Multi-Channel Notification Orchestration**: [Novu](#33-novu) (30,000 events/mo free) & [Courier](#34-courier) (10,000 notifications/mo free)
+* **Best Client-Side / No Backend Required**: [EmailJS](#31-emailjs) (send directly from browser/frontend)
 * **Lowest Cost at Millions of Emails**: [AWS SES](#4-aws-ses) ($0.10 / 1,000 emails)
-* **Strict Transactional Deliverability**: [Postmark](#2-postmark) & [ZeptoMail](#17-zeptomail)
-* **Strict EU Data Residency & GDPR**: [Lettermint](#21-lettermint) & [Scaleway](#16-scaleway)
+* **Strict Transactional Deliverability**: [Postmark](#2-postmark), [ZeptoMail](#17-zeptomail), and [SMTP2GO](#29-smtp2go)
+* **Strict EU Data Residency & GDPR**: [Lettermint](#21-lettermint), [Scaleway](#16-scaleway), and [AhaSend](#30-ahasend)
 * **For AI Agents & Programmable Inboxes**: [Primitive](#23-primitive)
 * **Pre-Production Email Testing & QA**: [Mailtrap](#13-mailtrap)
 
