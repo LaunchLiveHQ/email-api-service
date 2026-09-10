@@ -21,7 +21,7 @@ A comprehensive guide and comparison of popular email API services, developer pl
 | **[Loops](#11-loops)** | 2,000 emails / mo (1,000 contacts) | None | No | REST API, Webhooks, React components | SaaS onboarding & product-led email |
 | **[Plunk](#12-plunk)** | 3,000 emails / month | None | No | REST API, SMTP, Open-source self-host | Open-source AWS SES wrapper & privacy |
 | **[Mailtrap](#13-mailtrap)** | 1,000 sends / mo + 100 testing | None | No | REST API, SMTP | Dual testing sandbox + transactional delivery |
-| **[Cloudflare](#14-cloudflare)** | Unlimited inbound / 100 out/day | 100 workers/day | No | Cloudflare Workers `send_email`, DNS Routing | Serverless edge workflows & custom routing |
+| **[Cloudflare](#14-cloudflare)** | Unlimited inbound + 3k/mo outbound | Scaled daily quota | No | Workers binding (`env.EMAIL`), REST API, SMTP | Serverless edge delivery & inbound routing |
 | **[Unosend](#15-unosend)** | Up to 5,000 emails / month | None | No | REST API, SMTP | Credit-based pay-as-you-go transactional |
 | **[Scaleway](#16-scaleway)** | 300 emails / month | None | Yes (Scaleway Console) | REST API, SMTP | European sovereign cloud infrastructure |
 | **[ZeptoMail](#17-zeptomail)** | 10,000 email credits (on signup) | None | No | REST API, SMTP, Webhooks | Pure transactional email by Zoho |
@@ -186,14 +186,21 @@ A comprehensive guide and comparison of popular email API services, developer pl
 
 ---
 
-### 14. Cloudflare (Cloudflare Email Routing & Workers)
-* **Overview**: Cloudflare offers zero-cost inbound email routing, paired with Cloudflare Workers' `send_email` bindings for serverless outbound transactional messaging.
+### 14. Cloudflare (Cloudflare Email Service - Sending & Routing)
+* **Overview**: Cloudflare's full email solution uniting **Email Routing** (inbound management) and the newly introduced **Email Sending** service (outbound transactional delivery). It allows developers to send emails directly via a Cloudflare Workers binding (`env.EMAIL.send`), a standard REST API (`api.cloudflare.com/client/v4/accounts/{account_id}/email/sending/send`), or traditional authenticated SMTP relay (`smtps://smtp.mx.cloudflare.net:465`).
 * **Free Tier Allowance**:
-  * **Email Routing (Inbound)**: 100% Free and unlimited custom email address forwards to destination inboxes.
-  * **Workers Email Sending (Outbound)**: Free tier supports sending up to **100 emails / day** via Workers scripts (to configured verified destinations).
-* **Credit Card Required**: No
-* **Key Features**: Edge-native execution, zero server maintenance, catch-all routing, SPF/DKIM/DMARC automatic record management, spam filtering.
-* **Website**: [developers.cloudflare.com/email-routing](https://developers.cloudflare.com/email-routing)
+  * **Email Routing (Inbound)**: **100% Free & unlimited** custom email address forwarding to destination inboxes and Workers.
+  * **Email Sending (Outbound)**: Includes **3,000 emails / month** on Workers plans (with overage at $0.35 per 1,000 emails).
+  * **Free Sends to Verified Destinations**: Sending to verified destination addresses is **always free** and does not count toward monthly quotas or daily limits.
+  * **Daily Quota**: Starts with a conservative daily sending allowance that automatically scales upward with sending reputation and deliverability metrics.
+* **Credit Card Required**: No (for free DNS/Routing; standard Workers account for outbound sending)
+* **Key Features**: 
+  * Three delivery protocols: Cloudflare Workers binding (`env.EMAIL.send(...)`), REST API, and SMTP relay (`smtps://smtp.mx.cloudflare.net:465`).
+  * Automated DNS onboarding (`cf-bounce` subdomain configuration for MX, SPF, DKIM, and DMARC).
+  * Native serverless edge execution with zero third-party dependencies.
+  * Supports attachments up to 5 MiB (up to 25 MiB when sending to verified destination addresses) and 50 recipients per email.
+* **Documentation & Quickstart**: [Cloudflare Email Service - Send Emails](https://developers.cloudflare.com/email-service/get-started/send-emails/)
+* **Website**: [developers.cloudflare.com/email-service](https://developers.cloudflare.com/email-service/)
 
 ---
 
